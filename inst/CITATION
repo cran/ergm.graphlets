@@ -1,0 +1,23 @@
+citHeader("To cite ergm.graphlets in publications use:")
+
+citEntry(entry = "Article",
+  title        = "{ergm.graphlets}: A Package for ERG Modeling Based on Graphlet Statistics",
+  author       = personList(as.person("Omer N. Yaveroglu"),
+                   as.person("Sean M. Fitzhugh"),
+                   as.person("Maciej Kurant"),
+                   as.person("Athina Markopoulou"),
+                   as.person("Carter T. Butts"),
+                   as.person("Natasa Przulj")),
+  journal      = "Journal of Statistical Software",
+  year         = "2013",
+  volume       = "1",
+  number       = "1",
+  pages        = "1--2",
+  url          = "http://www.jstatsoft.org/",
+
+  textVersion  =
+  paste("Omer Nebil Yaveroglu, Sean M. Fitzhugh, Maciej Kurant, Athina Markopoulou, Carter T. Butts, Natasa Przulj (2013).",
+        "ergm.graphlets: A Package for ERG Modeling Based on Graphlet Statistics",
+        "Journal of Statistical Software, 1(1), 1-2.",
+        "URL http://www.jstatsoft.org/.")
+)

@@ -1,0 +1,5 @@
+
+useDynLib(ergm.graphlets)
+
+# Export all names
+exportPattern(".")
