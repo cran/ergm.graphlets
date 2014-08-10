@@ -7,23 +7,10 @@ library("statnet")
 library("ergm.graphlets")
 
 # 2 - Load the EMON dataset from statnet package for the illustration
-data("emon")
+data("emon3")
+data("spi")
 
-# 3 - Make the directed EMON network undirected
-emon.3 <- network(symmetrize(emon[[3]]), directed=F)
-
-# 4 - Obtain the node attributes of the EMON network and assign to the new undirected copy
-Command.Rank.Score <- emon[[3]] %v% "Command.Rank.Score"
-Location <- emon[[3]] %v% "Location"
-Sponsorship <- emon[[3]] %v% "Sponsorship"
-
-Command.Rank.Score[is.na(Command.Rank.Score)] <- 0
-
-emon.3 %v% "Command.Rank.Score" <- Command.Rank.Score
-emon.3 %v% "Location" <- Location
-emon.3 %v% "Sponsorship" <- Sponsorship
-
-# 5- Estimate a simple model with the network
+# 3- Estimate a simple model with the network
 emon.ergm <- ergm(emon.3 ~ graphletCount(0), control = control.ergm(seed=1))
 
 summary(emon.ergm)
@@ -32,7 +19,7 @@ summary(emon.ergm)
 
 
 # ORIGINAL EXAMPLES IN THE PAPER (commented out due to huge computational cost -- slowing down the CRAN tests)
-
+# NOTE: This procedure also includes the data preprocessing which we simplified with the data("emon3") and data("spi") objects
 #
 # EXAMPLE 1: Lake Pomona emergent multi-organizational network (EMON)
 #
