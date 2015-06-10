@@ -1,5 +1,6 @@
-
 useDynLib(ergm.graphlets)
-import(statnet)
+
+import(statnet.common,network,ergm)
+
 # Export all names
 exportPattern(".")

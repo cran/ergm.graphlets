@@ -49,10 +49,10 @@ For complete citation information, use\cr
 \code{citation(package="ergm.graphlets")}.
 }
 \references{
-Yaveroglu ON, Fitzhugh SM, Kurant M, Markopoulou A, Butts CT, Przulj N (2013).
-{\pkg{ergm.graphlets}: {A} Package for ERG Modeling Based on Graphlet Properties}, 
-Journal of Statistical Software 1(1), 1-2,
-URL http://www.jstatsoft.org/.
+Yaveroglu ON, Fitzhugh SM, Kurant M, Markopoulou A, Butts CT, Przulj N (2015).
+{\pkg{ergm.graphlets}: {A} Package for ERG Modeling Based on Graphlet Properties},
+Journal of Statistical Software 65(12), 1-29,
+URL http://www.jstatsoft.org/v65/i12/.
 }
 \seealso{statnet, network, ergm, ergm-terms}
 %\examples{

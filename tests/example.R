@@ -3,7 +3,6 @@
 #
 
 # 1 - Load the necessary libraries 
-library("statnet")
 library("ergm.graphlets")
 
 # 2 - Load the EMON dataset from statnet package for the illustration

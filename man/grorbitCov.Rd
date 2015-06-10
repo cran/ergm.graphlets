@@ -62,10 +62,10 @@ and behave identically to the supplied terms.
 %\value{\code{\link{ergm}} returns an object of class 'ergm' that is a list.
 %}
 \references{
-Yaveroglu ON, Fitzhugh SM, Kurant M, Markopoulou A, Butts CT, Przulj N (2013).
-{\pkg{ergm.graphlets}: {A} Package for ERG Modeling Based on Graphlet Properties}, 
-Journal of Statistical Software 1(1), 1-2,
-URL http://www.jstatsoft.org/.
+Yaveroglu ON, Fitzhugh SM, Kurant M, Markopoulou A, Butts CT, Przulj N (2015).
+{\pkg{ergm.graphlets}: {A} Package for ERG Modeling Based on Graphlet Properties},
+Journal of Statistical Software 65(12), 1-29,
+URL http://www.jstatsoft.org/v65/i12/.
 }
 \seealso{statnet, network, ergm, ergm-terms}
 %\examples{

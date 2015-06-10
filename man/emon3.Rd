@@ -1,24 +1,52 @@
+%  File man/graphletCount.Rd in package ergm.graphlets, part of the Statnet suite
+%  of packages for network analysis, http://statnet.org .
+%
+%  This software is distributed under the GPL-2 license.  It is free,
+%  open source.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \name{emon3}
-\alias{emon.3}
+\alias{EMON}
 \alias{emon3}
 \docType{data}
 \title{EMON Dataset}
 \description{
-    The Lake Pomona diseaster response network that is used for
-    illustrating the graphletCov terms. The dataset is originally
+  The dataset used for illustrating the disaster response network modeling example
+}
+%\usage{
+%terms.ergm()
+\section{EMON Dataset}{
+ \describe{
+  \item{\code{EMON dataset}}{
+    The Lake Pomona diseaster response network that is used for 
+    illustrating the graphletCov terms. 
+    }
+  }
+}
+%}
+%\arguments{
+%\item{\dots}{Specific to the model term.}
+%}
+
+\details{
+ The dataset is originally
     known as EMON dataset in literature. However, we modified the
     dataset to make it undirected and included some categorical
     node attributes that were originally provided with the network.
 }
-\usage{emon3}
-\format{A graph object containing a set of node attributes}
-\source{Drabek et al. (1981), Managing Multiorganizational Emergency Responses: Emergent Search 
-and Rescue Networks in Natural Disaster and Remote Area Settings}
 \references{
-Yaveroglu ON, Fitzhugh SM, Kurant M, Markopoulou A, Butts CT, Przulj N (2013).
+Yaveroglu ON, Fitzhugh SM, Kurant M, Markopoulou A, Butts CT, Przulj N (2015).
 {\pkg{ergm.graphlets}: {A} Package for ERG Modeling Based on Graphlet Properties}, 
-Journal of Statistical Software 1(1), 1-2,
-URL http://www.jstatsoft.org/.
+Journal of Statistical Software 65(12), 1-29,
+URL http://www.jstatsoft.org/v65/i12/.
 }
 \seealso{statnet, network, ergm, ergm-terms}
-\keyword{datasets}
+%\examples{
+%\donttest{
+%data(florentine)
+%summary(flomarriage~mindegree(3))
+%summary(flomarriage~mindegree(1,by="priorates"))
+%fit <- ergm(flomarriage~edges+mindegree(1,by="priorates"))
+%summary(fit)
+%}
+%}
+\keyword{emonData}
